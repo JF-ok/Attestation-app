@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calendar_fragment_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/calendar" />
+    <item
+        android:id="@+id/feed_fragment_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_feed"
+        android:title="@string/feed" />
+    <item
+        android:id="@+id/profile_fragment_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+</menu>

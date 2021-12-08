@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Emoty</string>
+    <string name="hello_blank_fragment">Фрагмент загружен</string>
+    <string name="calendar">Calendar</string>
+    <string name="feed">Feed</string>
+    <string name="profile">Profile</string>
+</resources>
