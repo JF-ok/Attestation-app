@@ -13,9 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         bottomNavigarionMenu = findViewById(R.id.bottom_navigation_menu)
-
-        bottomNavigarionMenu.setOnItemReselectedListener { item ->
-            var fragment: Fragment? = null
+        var fragment: Fragment? = null
+        bottomNavigarionMenu.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.calendar_fragment_page -> {
                     fragment = CalendarFragment()
