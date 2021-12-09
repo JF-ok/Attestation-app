@@ -1,5 +1,7 @@
 package com.example.emoty
 
+import android.content.Context
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,10 +10,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity() {
 
     lateinit var bottomNavigarionMenu: BottomNavigationView
+    var pref : SharedPreferences? = null//%%
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        pref = getSharedPreferences("TABLE", Context.MODE_PRIVATE)//%%
+
         bottomNavigarionMenu = findViewById(R.id.bottom_navigation_menu)
         var fragment: Fragment? = null
         bottomNavigarionMenu.setOnItemSelectedListener { item ->

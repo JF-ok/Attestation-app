@@ -4,4 +4,6 @@
     <string name="calendar">Calendar</string>
     <string name="feed">Feed</string>
     <string name="profile">Profile</string>
+    <string name="profile_page_title">Profile</string>
+    <string name="calendar_page_title">Calendar</string>
 </resources>

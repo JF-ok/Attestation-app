@@ -4,7 +4,8 @@
         android:id="@+id/calendar_fragment_page"
         android:enabled="true"
         android:icon="@drawable/ic_calendar"
-        android:title="@string/calendar" />
+        android:title="@string/calendar"
+        />
     <item
         android:id="@+id/feed_fragment_page"
         android:enabled="true"
