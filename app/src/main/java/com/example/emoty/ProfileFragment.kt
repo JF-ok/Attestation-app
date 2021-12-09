@@ -1,5 +1,7 @@
 package com.example.emoty
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,8 +11,6 @@ import android.widget.Switch
 import androidx.appcompat.app.AppCompatDelegate
 
 class ProfileFragment : Fragment() {
-
-    lateinit var themeSwitch: Switch
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,6 +30,16 @@ class ProfileFragment : Fragment() {
         }
 
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        startActivity(
+            Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://fictionbook.ru/author/liza_barrett/kak_rojdayutsya_yemocii_revolyuciya_v_po/read_online.html")
+            )
+        )
     }
 
 }
